@@ -95,6 +95,11 @@ nav li, nav li a {
   font-weight: bold;
 }
 
+.skills {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 1rem;
+}
+
 img {
   border: none;
   width:250px;height:370px
