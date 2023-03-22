@@ -1,0 +1,184 @@
+.skip-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+}
+
+.skip-link:focus{
+  width: unset;
+  height: unset;
+  position: relative;
+  padding: unset;
+  margin: unset;
+  font-size: 2rem;
+}
+
+
+html {
+font-size: 20px;
+}
+
+body {
+  margin: 0px;
+  background-color: #F2B8C6;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  background: #FFF;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  margin: 1rem auto;
+}
+
+.homepage {
+  text-align: center;
+}
+
+nav {
+  background-color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol {
+  list-style-type: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+
+a {
+  font-style: italic;
+  text-decoration: none;
+  font-family: 'PT Serif Italic', serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Kanit', sans-serif;
+  margin: 0
+}
+
+h2 {
+  font-weight: 700;
+  font-style: italic;
+}
+
+li {
+  list-style-type: none;
+}
+
+ol li {
+  text-transform: uppercase;
+}
+
+nav li, nav li a {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  background-color: #BE93D4;
+  color: #000;
+  padding: 1rem;
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
+}
+
+img {
+  border: none;
+  width:250px;height:370px
+}
+
+/*Footer section*/
+footer {
+  background: #d3d3d3;
+  color: #601A35;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*Media sections*/
+.location-holder, .media-holder {
+  width: 100%;
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  box-sizing: border-box;
+}
+
+.image-holder, .text-holder {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.image-holder img {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/*When the browser is at least 555px wide*/
+@media (min-width: 555px) {
+
+  .media-holder {
+    flex-direction: row;
+  }
+
+  .image-holder {
+    width: 500px;
+  }
+
+  .media-list .text-holder {
+    width: 70%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  nav li {
+    width: 50%;
+  }
+
+}
+
+/*When the browser is at least 800px wide*/
+@media (min-width: 800px) {
+
+  .image-holder {
+    width: 250px;
+  }
+
+  .media-list .text-holder {
+    width: calc(100% - 250px);
+  }
+
+  nav li {
+    width: 32%;
+  }
